@@ -33,18 +33,17 @@
 }
 #es-garnier.es-garnier .es-section-title {
   font-weight: 700;
-  font-size: 24px;
+  font-size: 18px;
   text-align: center;
   margin-block: 32px;
   line-height: 1.3;
 }
+#es-garnier.es-garnier .es-section-title--big {
+  font-size: 24px;
+}
 #es-garnier.es-garnier .es-section-title--highlight {
   color: #e95817;
-}
-@media (min-width: 768px) {
-  #es-garnier.es-garnier .es-section-title {
-    font-size: 32px;
-  }
+  font-size: 24px;
 }
 #es-garnier.es-garnier .es-kv {
   margin: 0;
@@ -52,6 +51,7 @@
   padding-top: 50px;
   position: relative;
   display: flex;
+  flex-direction: column;
   gap: 20px;
 }
 #es-garnier.es-garnier .es-kv__title {
@@ -75,6 +75,12 @@
   width: 100%;
   height: 100%;
   z-index: -1;
+}
+#es-garnier.es-garnier .es-kv__photo--1 {
+  order: 2;
+}
+#es-garnier.es-garnier .es-kv__photo--2 {
+  order: 1;
 }
 #es-garnier.es-garnier .es-kv__photoimg {
   margin: 0 auto;
@@ -139,7 +145,7 @@
 }
 @media (min-width: 768px) {
   #es-garnier.es-garnier .es-benefits .es-section-title {
-    font-size: 24px;
+    font-size: 18px;
   }
 }
 #es-garnier.es-garnier .es-benefits .es-section-title--highlight {
@@ -148,7 +154,7 @@
 }
 @media (min-width: 768px) {
   #es-garnier.es-garnier .es-benefits .es-section-title--highlight {
-    font-size: 32px;
+    font-size: 24px;
   }
 }
 #es-garnier.es-garnier .es-benefits__container {
@@ -166,7 +172,6 @@
   color: #e95817;
   background-color: #ffffff;
   text-align: center;
-  border-radius: 8px;
   padding: 16px;
 }
 #es-garnier.es-garnier .es-benefits__title--orange {
@@ -206,6 +211,7 @@
 #es-garnier.es-garnier .es-benefits__box--2 {
   position: relative;
   margin: 20px auto;
+  margin-bottom: 0;
   border: 2px solid white;
   display: flex;
   justify-content: center;
@@ -300,13 +306,29 @@
 #es-garnier.es-garnier .es-benefits__bold {
   font-weight: 700;
 }
+#es-garnier.es-garnier .es-benefits__desktop-BA-text-container {
+  max-width: 340px;
+  margin: 0px auto;
+  margin-top: 0;
+  display: flex;
+  padding: 16px 16px;
+  align-items: flex-end;
+  justify-content: space-around;
+  font-size: 20px;
+  height: 50px;
+  background: white;
+  color: black;
+  font-weight: 700;
+}
 #es-garnier.es-garnier .es-effects {
   text-align: center;
 }
 #es-garnier.es-garnier .es-effects .es-section-title {
   margin-top: 0;
+  font-size: 18px;
 }
 #es-garnier.es-garnier .es-effects .es-section-title--highlight {
+  font-size: 24px;
   display: block;
 }
 #es-garnier.es-garnier .es-effects__desktop-bg {
@@ -369,8 +391,7 @@
   display: block;
 }
 #es-garnier.es-garnier .es-formula__container {
-  background-color: #f4ec94;
-  background: linear-gradient(100deg, #f4ec94 0%, #fef115 100%);
+  background: linear-gradient(100deg, #f4ec94 0%, #fef115 150%);
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -561,6 +582,7 @@
   color: #e95817;
   font-weight: 700;
   font-size: 16px;
+  min-height: 98px;
 }
 #es-garnier.es-garnier .es-slider__wrapper {
   padding: 0 16px;
@@ -574,7 +596,7 @@
 }
 #es-garnier.es-garnier .es-slider__content {
   max-width: 100%;
-  padding: 16px 28px;
+  padding: 30px 28px;
   position: relative;
 }
 #es-garnier.es-garnier .es-slider__img {
@@ -584,6 +606,13 @@
   padding-top: 15px;
   max-height: 270px;
 }
+#es-garnier.es-garnier .es-slider__img--5 {
+  max-height: 200px;
+  max-width: 60%;
+}
+#es-garnier.es-garnier .es-slider__img--6 {
+  max-width: 60%;
+}
 #es-garnier.es-garnier .es-slider__slide {
   width: 50%;
 }
@@ -592,11 +621,14 @@
   height: 420px;
   width: 220px;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 #es-garnier.es-garnier .es-slider__button {
   width: 180px;
   margin: 0 auto;
-  border: 1px solid #0e8144;
+  border: 1px solid #11622c;
   border-radius: 0;
   display: block;
   padding: 12px 3px;
@@ -604,12 +636,11 @@
   font-weight: 700;
   font-size: 14px;
   text-align: center;
-  background: #0e8144;
+  background: #11622c;
   text-decoration: none;
   text-transform: uppercase;
   transition: all 0.5s;
   cursor: pointer;
-  border-radius: 10px;
 }
 #es-garnier.es-garnier .es-slider__button:hover {
   border: 1px solid #0e8144;
@@ -674,8 +705,8 @@
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  padding: 30px 15px;
-  background-color: #137434;
+  padding: 20px 15px;
+  background-color: #115e2a;
   background-size: cover;
   gap: 30px;
 }
@@ -849,7 +880,17 @@
 }
 @media screen and (min-width: 600px) {
   #es-garnier.es-garnier .es-kv {
-    padding-top: 100px;
+    padding-top: 65px;
+    flex-direction: row;
+  }
+  #es-garnier.es-garnier .es-kv__logo {
+    width: 25%;
+  }
+  #es-garnier.es-garnier .es-kv__photo--1 {
+    order: 1;
+  }
+  #es-garnier.es-garnier .es-kv__photo--2 {
+    order: 2;
   }
   #es-garnier.es-garnier .es-formula__item--4 {
     top: 80%;
@@ -898,7 +939,7 @@
     display: none;
   }
   #es-garnier.es-garnier .es-benefits__container {
-    background: linear-gradient(100deg, #f4ec94 0%, #fef115 100%);
+    background: linear-gradient(100deg, #f4ec94 0%, #fef115 160%);
   }
   #es-garnier.es-garnier .es-benefits__desktop {
     display: block;
@@ -938,15 +979,22 @@
     padding: 8px 16px;
   }
   #es-garnier.es-garnier .es-benefits__desktop-BA-top--2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -moz-column-gap: 5px;
+         column-gap: 5px;
     background-color: #ea5818;
     padding: 8px 16px;
     border-bottom: 3px solid #ffffff;
+    color: #fff;
   }
   #es-garnier.es-garnier .es-benefits__desktop-BA-top--span {
-    font-size: 24px;
+    font-size: 30px;
   }
   #es-garnier.es-garnier .es-benefits__desktop-BA-arrow-container {
     position: relative;
+    height: 100px;
   }
   #es-garnier.es-garnier .es-benefits__desktop-BA-arrow {
     position: absolute;
@@ -957,10 +1005,17 @@
   }
   #es-garnier.es-garnier .es-benefits__desktop-BA-text-container {
     display: flex;
-    padding: 8px 16px;
+    padding: 16px 16px;
     align-items: flex-end;
-    justify-content: space-between;
+    justify-content: space-around;
     height: 100px;
+    font-weight: 700;
+  }
+  #es-garnier.es-garnier .es-benefits__desktop-BA-text-container--text {
+    font-size: 20px;
+    height: 50px;
+    background: white;
+    color: black;
   }
   #es-garnier.es-garnier .es-benefits__desktop-images-wrapper {
     display: flex;
@@ -984,8 +1039,8 @@
     aspect-ratio: 2.66;
   }
   #es-garnier.es-garnier .es-effects__wrapper {
-    margin-left: 8%;
-    max-width: 48%;
+    margin-left: 5%;
+    max-width: 52%;
   }
   #es-garnier.es-garnier .es-effects__ba {
     display: none;
@@ -1021,10 +1076,10 @@
   #es-garnier.es-garnier .es-formula__item--title {
     text-align: left;
     margin-bottom: 10px;
-    font-size: 22px;
+    font-size: 18px;
   }
   #es-garnier.es-garnier .es-formula__item--text {
-    font-size: 18px;
+    font-size: 16px;
     margin-block: 10px;
     font-weight: 500;
   }
@@ -1159,7 +1214,8 @@
     top: 55%;
     left: 58%;
   }
-  #es-garnier.es-garnier .es-benefits__title--orange {
+  #es-garnier.es-garnier .es-benefits__title--orange,
+  #es-garnier.es-garnier .es-benefits__title--black {
     margin-left: 100px;
   }
   #es-garnier.es-garnier .es-formula__item--1 {
@@ -1185,9 +1241,21 @@
   #es-garnier.es-garnier .es-htu__background {
     gap: 10%;
     padding-inline: 64px;
+    padding-left: 200px;
+  }
+  #es-garnier.es-garnier .es-htu__flex {
+    margin-left: -100px;
+  }
+  #es-garnier.es-garnier .es-htu__pack {
+    margin-bottom: -15%;
+    width: 24%;
   }
 }
 @media screen and (min-width: 990px) {
+  #es-garnier.es-garnier .es-effects__wrapper {
+    margin-left: 8%;
+    max-width: 48%;
+  }
   #es-garnier.es-garnier .es-benefits__border {
     top: 18%;
   }
