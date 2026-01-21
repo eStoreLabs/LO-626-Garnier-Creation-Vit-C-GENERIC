@@ -34,7 +34,7 @@ $es-black: #000;
   max-width: 100%;
 }
 
-#es-garnier.es-garnier {
+#es-rc.es-rc-content {
   margin: 0 auto;
   padding: 0;
   font-family: $es-montserrat;
@@ -82,10 +82,6 @@ $es-black: #000;
     &--highlight {
       color: $es-orange;
       font-size: 24px;
-    }
-
-    @media (min-width: 768px) {
-      // font-size: 24px;
     }
   }
 
@@ -258,7 +254,6 @@ $es-black: #000;
       position: relative;
       margin: 20px auto;
       border: 2px solid white;
-      // border-radius: 25px;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -273,7 +268,6 @@ $es-black: #000;
         margin: 20px auto;
         margin-bottom: 0;
         border: 2px solid white;
-        // border-radius: 25px;
         display: flex;
         justify-content: center;
         background-size: 100%;
@@ -661,7 +655,6 @@ $es-black: #000;
     margin: 0;
 
     &__wrapper {
-      // @include es-yellow-gradient();
       background: linear-gradient(50deg, #fef115 0%, #f4ec94 33%);
     }
 
@@ -847,7 +840,8 @@ $es-black: #000;
     &__img {
       width: 50%;
       @include img;
-      min-width: 250px;
+      max-width: 225px;
+      margin-bottom: 15px;
       transition: 0.5s all;
 
       &:hover {
@@ -1208,7 +1202,6 @@ $es-black: #000;
           color: $es-white;
           text-transform: uppercase;
           font-weight: 600;
-          // border-radius: 16px;
           overflow: hidden;
           border: 3px solid $es-white;
           z-index: 1;
@@ -1506,7 +1499,6 @@ $es-black: #000;
     .es-benefits__desktop {
       &-title-wrapper {
         position: absolute;
-        // transform: translate(-50%);
         left: 0;
         top: 24px;
         z-index: 3;
@@ -1616,30 +1608,6 @@ $es-black: #000;
 
   100% {
     transform: scale(1);
-  }
-}
-
-@keyframes slidedown {
-  from {
-    opacity: 0;
-    transform: translateY(-32px);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes slideright {
-  from {
-    opacity: 0.3;
-    transform: translateX(-100px);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateX(0);
   }
 }
 
