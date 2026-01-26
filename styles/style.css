@@ -271,7 +271,7 @@
 }
 #es-rc.es-rc-content .es-benefits__span {
   color: #e95817;
-  font-weight: 600;
+  font-weight: 700;
 }
 #es-rc.es-rc-content .es-benefits .progress-bar {
   margin: 10px auto;
@@ -962,7 +962,7 @@
     width: max-content;
     color: #ffffff;
     text-transform: uppercase;
-    font-weight: 600;
+    font-weight: 500;
     overflow: hidden;
     border: 3px solid #ffffff;
     z-index: 1;
@@ -991,7 +991,11 @@
     color: #fff;
   }
   #es-rc.es-rc-content .es-benefits__desktop-BA-top--span {
-    font-size: 30px;
+    font-size: 35px;
+    font-weight: 600;
+  }
+  #es-rc.es-rc-content .es-benefits__desktop-BA-top--span-light {
+    font-weight: 500;
   }
   #es-rc.es-rc-content .es-benefits__desktop-BA-arrow-container {
     position: relative;

@@ -336,7 +336,7 @@ $es-black: #000;
 
     &__span {
       color: $es-orange;
-      font-weight: 600;
+      font-weight: 700;
     }
 
     .progress-bar {
@@ -1201,7 +1201,7 @@ $es-black: #000;
           width: max-content;
           color: $es-white;
           text-transform: uppercase;
-          font-weight: 600;
+          font-weight: 500;
           overflow: hidden;
           border: 3px solid $es-white;
           z-index: 1;
@@ -1231,7 +1231,12 @@ $es-black: #000;
           }
 
           &--span {
-            font-size: 30px;
+            font-size: 35px;
+            font-weight: 600;
+          }
+
+          &--span-light {
+            font-weight: 500;
           }
         }
 
