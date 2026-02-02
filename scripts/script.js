@@ -1,28 +1,4 @@
 (() => {
-  // const images = document.querySelectorAll('#es-rc .es-cross__circle');
-  // const infoDiv = document.getElementById('info');
-  // const link = document.getElementById('link');
-
-  // const updateContent = (image) => {
-  //   images.forEach((img) => (img.style.opacity = '0.5'));
-  //   image.style.opacity = '1';
-  //   const info = image.getAttribute('data-info');
-  //   infoDiv.textContent = info;
-  //   const href = image.getAttribute('data-link');
-  //   link.href = href;
-  // };
-
-  // // Domyślnie "kliknięcie" pierwszego obrazka
-  // if (images.length > 0) {
-  //   updateContent(images[0]);
-  // }
-
-  // // Nasłuchiwanie kliknięć na obrazki
-  // images.forEach((image) => {
-  //   image.addEventListener('click', () => updateContent(image));
-  // });
-
-  // Dodanie logiki do zwijania/rozwijania sekcji
   const hideButton = document.querySelector('#es-rc .es-ingr__menu');
   const hideText = document.querySelector('#es-rc .es-ingr__hide');
 
