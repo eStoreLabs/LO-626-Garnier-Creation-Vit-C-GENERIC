@@ -78,9 +78,88 @@
 }
 #es-rc.es-rc-content .es-kv__photo--1 {
   order: 2;
+  position: relative;
 }
 #es-rc.es-rc-content .es-kv__photo--2 {
   order: 1;
+}
+#es-rc.es-rc-content .es-kv__before {
+  position: absolute;
+  top: 43.7%;
+  right: 33%;
+  font-size: 6px;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+@media screen and (min-width: 360px) {
+  #es-rc.es-rc-content .es-kv__before {
+    right: 35%;
+  }
+}
+@media screen and (min-width: 370px) {
+  #es-rc.es-rc-content .es-kv__before {
+    top: 43.7%;
+    right: 33%;
+    font-size: 8px;
+  }
+}
+@media screen and (min-width: 430px) {
+  #es-rc.es-rc-content .es-kv__before {
+    top: 43.7%;
+    right: 35%;
+    font-size: 8px;
+  }
+}
+@media screen and (min-width: 600px) {
+  #es-rc.es-rc-content .es-kv__before {
+    top: 43.7%;
+    right: 33%;
+    font-size: 6px;
+  }
+}
+@media screen and (min-width: 650px) {
+  #es-rc.es-rc-content .es-kv__before {
+    right: 34.5%;
+  }
+}
+@media screen and (min-width: 768px) {
+  #es-rc.es-rc-content .es-kv__before {
+    top: 44.1%;
+    right: 34%;
+    font-size: 8px;
+  }
+}
+@media screen and (min-width: 998px) {
+  #es-rc.es-rc-content .es-kv__before {
+    right: 35%;
+  }
+}
+#es-rc.es-rc-content .es-kv__after {
+  position: absolute;
+  top: 50.7%;
+  right: 26%;
+  font-size: 6px;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+@media screen and (min-width: 370px) {
+  #es-rc.es-rc-content .es-kv__after {
+    font-size: 8px;
+  }
+}
+@media screen and (min-width: 600px) {
+  #es-rc.es-rc-content .es-kv__after {
+    top: 50.7%;
+    right: 26%;
+    font-size: 6px;
+  }
+}
+@media screen and (min-width: 768px) {
+  #es-rc.es-rc-content .es-kv__after {
+    font-size: 8px;
+  }
 }
 #es-rc.es-rc-content .es-kv__photoimg {
   margin: 0 auto;
